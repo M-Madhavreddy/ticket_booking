@@ -1,5 +1,4 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_booking/screens/homesceen.dart';
 
@@ -12,10 +11,10 @@ class BottomBar extends StatefulWidget {
 
 class _BottomBarState extends State<BottomBar> {
   final List<Widget> _screens = [
-    HomeScreen(),
-    Text("search"),
-    Text("ticket"),
-    Text("personal"),
+    const HomeScreen(),
+    const Text("search"),
+    const Text("ticket"),
+    const Text("personal"),
   ];
   int counter = 0;
 
@@ -40,7 +39,7 @@ class _BottomBarState extends State<BottomBar> {
         selectedItemColor: Colors.grey,
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(FluentSystemIcons.ic_fluent_home_regular, size: 30),
               activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
